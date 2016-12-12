@@ -3,11 +3,11 @@ import Masonry from 'react-masonry-component';
 
 
 const swimmers = [
-  { key: 0, name: 'Will Chertoff | Photos', image: 'will', categories: ['all', 'web', 'photo'] },
-  { key: 1, name: 'Dream Date', image: 'noware', categories: ['all', 'web', 'design'] },
-  { key: 2, name: 'The Exchange', image: 'will', categories: ['all', 'web', 'photo', 'sound'] },
-  { key: 3, name: 'Tammy for The Great Discontent', image: 'will', categories: ['all', 'photo'] },
-  { key: 4, name: 'Tammy for The Great Discontent', image: 'will', categories: ['all', 'photo'] },
+  { key: 0, name: 'Will Chertoff | Photos', image: 'willphoto', categories: ['all', 'web', 'photo'] },
+  { key: 1, name: 'Dream Date', image: 'ddh', categories: ['all', 'web', 'design'] },
+  { key: 2, name: 'The Exchange', image: 'ex', categories: ['all', 'web', 'photo', 'sound'] },
+  { key: 3, name: 'Tammy for The Great Discontent', image: 'tami', categories: ['all', 'photo'] },
+  { key: 4, name: 'TedX Mt. Hood', image: 'david', categories: ['all', 'photo'] },
 ];
 
 const masonryOptions = {
@@ -32,7 +32,7 @@ class SplashPool extends Component {
         <img src={`/images/${swimmer.image}.JPG`} alt={swimmer.name} />
         <div className="lower">
           <h6>{swimmer.name}</h6>
-          <h7>{swimmer.categories.map(cat => <span>{cat}</span>)}</h7>
+          <h7>{swimmer.categories.map(cat => <span>{cat} </span>)}</h7>
         </div>
       </div>
     );

@@ -2,7 +2,7 @@ import React from 'react';
 import Icon from './Icon';
 
 const fullscreenStyles = {
-  backgroundImage: `url('../images/noware.JPG')`, // eslint-disable-line
+  backgroundImage: `url('../images/will.JPG')`, // eslint-disable-line
 };
 
 const Hero = () =>
