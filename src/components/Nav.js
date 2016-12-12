@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router';
 
 const Nav = () =>
   <nav>
@@ -9,11 +8,11 @@ const Nav = () =>
       </div>
       <div className="module right">
         <ul className="menu">
-          <li><Link to="//instagram.com/behind_your_eye">photo</Link></li>
-          <li><Link to="//instagram.com/behind_your_eye">vsco</Link></li>
-          <li><Link to="//instagram.com/behind_your_eye">instagram</Link></li>
-          <li><Link to="//instagram.com/behind_your_eye">linkedIn</Link></li>
-          <li><Link to="//instagram.com/behind_your_eye">github</Link></li>
+          <li><a target="_blank" rel="noopener noreferrer" href="https://www.willchertoff.photos">photo</a></li>
+          <li><a target="_blank" rel="noopener noreferrer" href="https://www.vsco.co/willchertoff/images/1">vsco</a></li>
+          <li><a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/behind_your_eye">instagram</a></li>
+          <li><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/will-chertoff">linkedIn</a></li>
+          <li><a target="_blank" rel="noopener noreferrer" href="https://www.github.com/willchertoff">github</a></li>
         </ul>
       </div>
     </div>

@@ -23,10 +23,10 @@ const Hero = () =>
     </div>
     <div className="align-bottom m24">
       <ul className="menu social-list">
-        <li><Icon icon={'facebook'} /></li>
-        <li><Icon icon={'instagram'} /></li>
-        <li><Icon icon={'linkedIn'} /></li>
-        <li><Icon icon={'github'} /></li>
+        <li><a href="https://www.facebook.com/will.chertoff" rel="noopener noreferrer" target="_blank"><Icon icon={'facebook'} /></a></li>
+        <li><a href="https://www.instagram.com/behind_your_eye" rel="noopener noreferrer" target="_blank"><Icon icon={'instagram'} /></a></li>
+        <li><a href="https://www.linkedin.com/in/will-chertoff" rel="noopener noreferrer" target="_blank"><Icon icon={'linkedIn'} /></a></li>
+        <li><a href="https://www.github.com/willchertoff" rel="noopener noreferrer" ><Icon icon={'github'} /></a></li>
       </ul>
     </div>
   </section>;
