@@ -5,7 +5,7 @@ const Nav = () =>
   <nav>
     <div className="nav-bar">
       <div className="module left">
-        <img alt="logo"/>
+        <h2 className="uppercase">Chertoff</h2>
       </div>
       <div className="module right">
         <ul className="menu">
@@ -17,6 +17,6 @@ const Nav = () =>
         </ul>
       </div>
     </div>
-  </nav>
+  </nav>;
 
 export default Nav;

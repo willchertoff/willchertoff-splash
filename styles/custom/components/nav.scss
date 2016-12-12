@@ -3,8 +3,22 @@
   max-height: 55px;
   line-height: 53px;
   border-bottom: 1px solid #ccc;
+  h2 {
+    @extend .rale;
+    font-size: 20px;
+    line-height: 50px;
+    color: #292929;
+    font-weight: 500;
+    letter-spacing: 8px;
+    opacity: .83;
+  }
 
   .module {
     height: 55px;
+  }
+
+  a {
+    @extend .rale;
+    text-transform: uppercase;
   }
 }
