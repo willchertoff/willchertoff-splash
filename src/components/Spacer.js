@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Spacer = () =>
-  <section className="spacer pb40">
+  <section className="spacer pb55">
     <div className="row">
       <div className="small-12 text-center uppercase">
         <h6>Selected Projects</h6>

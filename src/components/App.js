@@ -2,6 +2,7 @@ import React from 'react';
 import Nav from './Nav';
 import Hero from './Hero';
 import Spacer from './Spacer';
+import SplashPool from '../containers/SplashPool';
 
 const App = () =>
   <div className="wrapper">
@@ -11,6 +12,7 @@ const App = () =>
     <div className="main-container">
       <Hero />
       <Spacer />
+      <SplashPool />
     </div>
   </div>;
 
