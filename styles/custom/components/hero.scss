@@ -2,6 +2,7 @@
   @extend .rale;
   position: relative;
   background-attachment: fixed;
+  top: -55px;
   &:before {
     position: absolute;
     content: '';
@@ -30,5 +31,22 @@
   }
   .container {
     z-index: 9;
+  }
+
+  .align-bottom {
+    z-index: 9;
+    width: 100%;
+  }
+  .menu {
+    li {
+      float: none;
+    }
+  }
+  .social-list {
+    z-index: 9;
+    text-align: center;
+    svg {
+      fill: white;
+    }
   }
 }

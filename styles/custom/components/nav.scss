@@ -1,3 +1,8 @@
+.nav-container {
+  z-index: 16;
+  position: relative;
+  background: white;
+}
 .nav-bar {
   height: 55px;
   max-height: 55px;
@@ -6,11 +11,11 @@
   h2 {
     @extend .rale;
     font-size: 20px;
-    line-height: 50px;
+    line-height: 55px;
     color: #292929;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: 8px;
-    opacity: .83;
+    opacity: 0.73;
   }
 
   .module {
@@ -20,5 +25,9 @@
   a {
     @extend .rale;
     text-transform: uppercase;
+    font-weight: 300;
+    font-weight: 600;
+    letter-spacing: 1px;
+    white-space: normal;
   }
 }

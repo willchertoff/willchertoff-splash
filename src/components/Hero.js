@@ -1,4 +1,5 @@
 import React from 'react';
+import Icon from './Icon';
 
 const fullscreenStyles = {
   backgroundImage: `url('../images/noware.JPG')`, // eslint-disable-line
@@ -19,6 +20,14 @@ const Hero = () =>
           </h5>
         </div>
       </div>
+    </div>
+    <div className="align-bottom m24">
+      <ul className="menu social-list">
+        <li><Icon icon={'facebook'} /></li>
+        <li><Icon icon={'instagram'} /></li>
+        <li><Icon icon={'linkedIn'} /></li>
+        <li><Icon icon={'github'} /></li>
+      </ul>
     </div>
   </section>;
 
