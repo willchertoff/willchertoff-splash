@@ -23,6 +23,14 @@ class SplashPool extends Component {
       category: 'all',
     };
   }
+
+  onClick = (e) => {
+    e.preventDefault();
+    const filter = e.target.getAttribute('data-filter');
+    this.setState({
+      category: filter,
+    });
+  }
   byCategory = swimmer =>
     swimmer.categories.includes(this.state.category);
 
@@ -32,7 +40,7 @@ class SplashPool extends Component {
         <img src={`/images/${swimmer.image}.JPG`} alt={swimmer.name} />
         <div className="lower">
           <h6>{swimmer.name}</h6>
-          <h7>{swimmer.categories.map(cat => <span>{cat} </span>)}</h7>
+          <h7>{swimmer.categories.map(cat => <span key={cat}>{cat} </span>)}</h7>
         </div>
       </div>
     );
@@ -40,7 +48,16 @@ class SplashPool extends Component {
   render() {
     return (
       <section className="splash-pool">
-        <div className="filter" />
+        <div className="filter">
+          <ul className="filter-list">
+            {/* eslint-disable jsx-a11y/no-static-element-interactions */}
+            <li data-filter="all" onClick={this.onClick} className={this.state.category === 'all' ? 'active' : 'inactive'} >All</li>
+            <li data-filter="web" onClick={this.onClick} className={this.state.category === 'web' ? 'active' : 'inactive'}>Web</li>
+            <li data-filter="photo" onClick={this.onClick} className={this.state.category === 'photo' ? 'active' : 'inactive'}>Photo</li>
+            <li data-filter="sound" onClick={this.onClick} className={this.state.category === 'sound' ? 'active' : 'inactive'}>Sound</li>
+          </ul>
+          {/* eslint-enable jsx-a11y/no-static-element-interactions */}
+        </div>
         <Masonry
           className={'splash-pool-gallery'}
           options={masonryOptions}
