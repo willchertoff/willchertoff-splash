@@ -1,7 +1,6 @@
 .hero {
   @extend .rale;
   position: relative;
-  background-attachment: fixed;
   top: -55px;
   &:before {
     position: absolute;
@@ -15,6 +14,7 @@
     z-index: 2;
   }
   .background-image {
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     top: -55px;
@@ -40,6 +40,8 @@
   .menu {
     li {
       float: none;
+      padding: 0 1em;
+      margin-right: 0;
     }
   }
   .social-list {
