@@ -1,17 +1,21 @@
 import React, { Component, PropTypes } from 'react';
+import Nav from './Nav';
+import Hero from './Hero';
 
 const propTypes = {
-  message: PropTypes.object.isRequired,
 };
 
 class App extends Component {
   render() {
-    const { messageString } = this.props.message;
-
     return (
-      <h1>
-        {`${messageString} World!`}
-      </h1>
+      <div className="wrapper">
+        <div className="nav-container">
+          <Nav />
+        </div>
+        <div className="main-container">
+          <Hero />
+        </div>
+      </div>
     );
   }
 }
